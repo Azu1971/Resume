@@ -9,8 +9,6 @@ import ContactComp from '../Components/ContactComp.jsx'
 import SpaceShip from '../3dComponents/Spaceship.jsx'
 
 import p3 from '../assets/3DModels/P3.glb?url'
-import p10 from '../assets/3DModels/P10.glb?url'
-import p9 from '../assets/3DModels/P9.glb?url'
 
 const Contact = () => {
   return (
