@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import { Suspense, useMemo } from 'react'
+import { Suspense } from 'react'
 import galaxy from '../assets/background/galaxy.jpg'
 import Sphere from '../3dComponents/Sphere.jsx'
 import SceneBackground from '../3dComponents/SceneBackground.jsx'
@@ -34,7 +34,7 @@ import next from '../assets/skills/next.png'
 import p1 from '../assets/3DModels/P1.glb?url'
 import SpaceShip from '../3dComponents/Spaceship.jsx'
 
-import moon from '../assets/3DModels/moon.glb?url'
+import moon from '../assets/3DModels/Moon.glb?url'
 
 const CENTER = [0, -40, 0]
 
