@@ -21,9 +21,6 @@ import p6 from '../assets/3DModels/P6.glb?url'
 import p7 from '../assets/3DModels/P7.glb?url'
 import p8 from '../assets/3DModels/P8.glb?url'
 
-import p9 from '../assets/3DModels/P9.glb?url'
-import p10 from '../assets/3DModels/P10.glb?url'
-
 import SceneBackground from '../3dComponents/SceneBackground.jsx'
 
 import * as THREE from 'three'
