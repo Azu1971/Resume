@@ -1,0 +1,77 @@
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  /* make the list the only scrollable area */
+  max-height: 80vh;          /* or calc(100vh - 120px) if you have a header */
+  overflow-y: auto;
+
+  /* hide scrollbar (still scrollable) */
+  -ms-overflow-style: none;  /* IE/Edge legacy */
+  scrollbar-width: none;     /* Firefox */
+
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+
+.research-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;             /* Chrome/Safari */
+}
+
+.research-card {
+  background: rgba(255,255,255,0.03);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.36);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.research-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
+
+.research-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.research-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: #fff;
+}
+
+.research-bullets {
+  margin: 0;
+  padding-left: 18px;
+  color: #d6d6d6;
+  line-height: 1.5;
+  font-size: 0.98rem;
+}
+
+.research-bullet {
+  margin-bottom: 10px;
+}
+
+/* emphasize numeric results inside bullets */
+.research-bullet b, .research-bullet strong {
+  color: #ffd86b;
+  font-weight: 700;
+}
+
+/* responsive */
+@media (max-width: 820px) {
+  .research-list { padding: 12px; gap: 16px; }
+  .research-title { font-size: 1.05rem; }
+}

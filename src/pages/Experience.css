@@ -1,0 +1,42 @@
+/* keep canvas fixed as background */
+.scene-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* page container should fill viewport so overlay can scroll inside it */
+.experience-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* prevent body scroll */
+}
+
+/* overlay sits above canvas and is the only scrollable area */
+.experience-overlay {
+  position: absolute;
+  inset: 0;               /* cover whole viewport */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 40px; /* adjust top padding to move content down */
+  box-sizing: border-box;
+
+  max-height: 100vh;      /* constrain to viewport */
+  overflow-y: auto;       /* only this element scrolls */
+  -webkit-overflow-scrolling: touch;
+  pointer-events: none;
+}
+
+/* optional: nicer scrollbar (light) */
+.experience-overlay::-webkit-scrollbar { width: 10px; }
+.experience-overlay::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+}
+
+

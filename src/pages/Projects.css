@@ -1,0 +1,20 @@
+.overlay-ui {
+  position: absolute;
+  inset: 0;               /* top:0; right:0; bottom:0; left:0 */
+  z-index: 9999;
+  pointer-events: none;   /* allow clicks through by default */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 70px;
+}
+.overlay-ui > * {
+  pointer-events: auto;
+}
+
+.overlay-ui h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
