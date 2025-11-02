@@ -6,13 +6,13 @@ import galaxy from '../assets/background/galaxy.jpg'
 import SceneBackground from '../3dComponents/SceneBackground.jsx'
 import Sphere from '../3dComponents/Sphere.jsx'
 import './Common.css'
-import ProjectsComp from '../Components/ProjectsComp.jsx'
+import ProjectsComp from '../d/ProjectsComp.jsx'
 import './Projects.css'
 import SpaceShip from '../3dComponents/Spaceship.jsx'
 
 import p2 from '../assets/3DModels/P2.glb?url'
 
-import Loader from '../components/Loader.jsx'
+import Loader from '../d/Loader.jsx'
 
 const Projects = () => {
   return (
