@@ -5,7 +5,7 @@ import { Html, Billboard } from '@react-three/drei'
 import { useGLTF, Clone } from "@react-three/drei";
 import * as THREE from 'three';
 
-function Sphere({position=[0,0,0], color='orange', radius=1, to, logo, label, external=false,
+function Sphere({position=[0,0,0], color='orange', radius=0.5, to, logo, label, external=false,
   orbit = false,                  // enable orbiting
   orbitCenter = [0, 0, 0],        // center to orbit around
   orbitRadius = 0,                // distance from center
