@@ -10,7 +10,7 @@ import SpaceShip from '../3dComponents/Spaceship.jsx'
 import StarWarsCrawl from '../3dComponents/StarWarsCrawl.jsx'
 import Loader from '../components/Loader.jsx'
 
-const Awards = () => {
+const Achievements = () => {
   return (
     <div className="fullpage">
         <Canvas camera={{near:0.1, far:2000, fov:75, position:[0,0,10]}}>
@@ -25,11 +25,15 @@ const Awards = () => {
                 `
                 Runners-up - NLP Hackathon by BdOSN and Bangla.gov.bd (2023)
 
-                Country Highest - AS IT (2019), IGCSE Computer Science (2018)
+                Country Highest - AS IT (2019)
+                
+                IGCSE Computer Science (2018)
 
                 Duke of Edinburgh's Award - Silver Standard (2017)
 
                 Merit and Academic Scholarships - BRAC University (2020–2024)
+
+                Third - Bangladesh Math Olympiad Regional Round (2018)
 
                 Daily Star Award (2018)
 
@@ -45,4 +49,4 @@ const Awards = () => {
   )
 }
 
-export default Awards
+export default Achievements

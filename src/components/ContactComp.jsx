@@ -6,13 +6,15 @@ import fb from '../assets/contact/facebook.png'
 import wa from '../assets/contact/whatsapp.png'
 import gmail from '../assets/contact/gmail.png'
 import linkedin from '../assets/contact/linkedin.png'
+import github from '../assets/contact/github.png'
 
 const social = [
   { id: 1, img: insta, alt: 'Instagram', link: 'https://www.instagram.com/mahtab.ajmain/', show:'instagram.com/mahtab.ajmain/' },
   { id: 2, img: fb, alt: 'Facebook', link: 'https://www.facebook.com/ajmain.mahtab.52', show:'facebook.com/ajmain.mahtab.52' },
   { id: 3, img: wa, alt: 'WhatsApp', link: 'https://wa.me/01798242619', show:'01798242619' },
   { id: 4, img: gmail, alt: 'Email', link: 'mailto:ajmain1234@gmail.com', show:'ajmain1234@gmail.com' },
-  { id: 5, img: linkedin, alt: 'LinkedIn', link: 'https://www.linkedin.com/in/ajmain-mahtab-9754a828b/', show:'linkedin.com/in/ajmain-mahtab-9754a828b/' }
+  { id: 5, img: linkedin, alt: 'LinkedIn', link: 'https://www.linkedin.com/in/ajmain-mahtab-9754a828b/', show:'linkedin.com/in/ajmain-mahtab-9754a828b/' },
+  { id: 6, img: github, alt: 'Github', link: 'https://github.com/Azu1971', show:'github.com/Azu1971' }
 ]
 
 function SocialCard({ s }) {

@@ -12,7 +12,7 @@ const experiences = [
   {
     id: 1,
     role: 'Adjunct Faculty',
-    period: 'July 2025 — Present',
+    period: 'July 2025 — October 2025',
     org: 'BRAC University',
     location: 'Dhaka, Bangladesh',
     logo: bracLogo,
@@ -23,12 +23,14 @@ const experiences = [
   },
   {
     id: 2,
-    role: 'Coaching Teacher',
+    role: 'Mathematics Instructor',
     period: 'September 2025 — Present',
     org: 'Binary Institute',
     location: 'Dhaka, Bangladesh',
     logo: binaryLogo,
-    bullets: ['Teaching an IBDP mathematics batch.']
+    bullets: ['Teaching IBDP mathematics: Standard Level and Higher Level',
+      'Designing and evaluating examinations'
+    ]
   },
   {
     id: 3,

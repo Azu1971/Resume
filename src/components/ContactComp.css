@@ -142,7 +142,3 @@
 
 .social-link img { display: block; width: 60px; height: 60px; }
 
-/* Center last row with 2 items (items 4 and 5) */
-.social-grid > .social-card:nth-child(4) {
-  grid-column: 1 / span 2;            /* move item 4 to column 2 */
-}

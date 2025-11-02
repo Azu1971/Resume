@@ -59,15 +59,15 @@ const Home = () => {
             {/* <pointLight intensity={100} /> */}
             <Sun  glowColor="#ffd166" castShadow phoneScale={modelScaleMultiplier}/>
             {/* <Sphere sun={true} color='#ffd166'/> */}
-            <Sphere color="red" radius={0.4} to='/skills' label={'Skills'} orbit={true} orbitPhase={1.25} orbitRadius={2.5 * orbitMultiplier} orbitSpeed={0.1} modelUrl={p1} modelScale={0.6 * modelScaleMultiplier} labelVisible/>
-            <Sphere color="red" radius={0.6} to='/projects' label={'Projects'} orbit={true} orbitPhase={0.5} orbitRadius={4 * orbitMultiplier} orbitSpeed={0.05} modelUrl={p2} modelScale={0.5 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/skills' label={'Skills'} orbit={true} orbitPhase={1.25} orbitRadius={2.5 * orbitMultiplier} orbitSpeed={0.1} modelUrl={p1} modelScale={0.6 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/projects' label={'Projects'} orbit={true} orbitPhase={0.5} orbitRadius={4 * orbitMultiplier} orbitSpeed={0.05} modelUrl={p2} modelScale={0.5 * modelScaleMultiplier} labelVisible/>
             {/* <Sphere color="lightblue" radius={0.7} to='/about' label={'About'} orbit={true} orbitPhase={1} orbitRadius={5}/> */}
-            <Sphere color="red" radius={0.5} to='/contact' label={'Contact'} orbit={true} orbitPhase={2.5} orbitRadius={5.5 * orbitMultiplier} modelUrl={p3} modelScale={0.75 * modelScaleMultiplier} labelVisible/>
-            <Sphere color="red" radius={0.7} to='https://www.instagram.com/azu4rt/' label={'Artwork'} external={true} orbit={true} orbitPhase={2} orbitRadius={7.5 * orbitMultiplier} modelUrl={p4} modelScale={0.7 * modelScaleMultiplier} labelVisible/>
-            <Sphere color="red" radius={0.5} to='/research' label={'Research'} orbit={true} orbitPhase={-.7} orbitRadius={9.7 * orbitMultiplier} modelUrl={p8} modelScale={1 * modelScaleMultiplier} labelVisible/>
-            <Sphere color="red" radius={0.4} to='/awards' label={'Achievements'} orbit={true} orbitPhase={-.25} orbitRadius={12.1 * orbitMultiplier} modelUrl={p6} modelScale={0.6 * modelScaleMultiplier} labelVisible/>
-            <Sphere color="red" radius={0.6} to='/education' label={'Education'} orbit={true} orbitPhase={3} orbitRadius={10 * orbitMultiplier} orbitSpeed={0.008} modelUrl={p7} modelScale={0.15 * modelScaleMultiplier} labelVisible/>
-            <Sphere color='red' radius={0.4} to='/experience' label={'Experience'} orbit={true} orbitPhase={-.5} orbitRadius={14.2 * orbitMultiplier} orbitSpeed={0.005} modelUrl={p5} modelScale={0.6 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/contact' label={'Contact'} orbit={true} orbitPhase={2.5} orbitRadius={5.5 * orbitMultiplier} modelUrl={p3} modelScale={0.75 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='https://www.instagram.com/azu4rt/' label={'Artwork'} external={true} orbit={true} orbitPhase={2.2} orbitRadius={7.5 * orbitMultiplier} modelUrl={p4} modelScale={0.7 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/research' label={'Research'} orbit={true} orbitPhase={-.7} orbitRadius={9.7 * orbitMultiplier} orbitSpeed={0.007} spinSpeed={0.01} modelUrl={p8} modelScale={1 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/achievements' label={'Achievements'} orbit={true} orbitPhase={-.25} orbitRadius={12.1 * orbitMultiplier} orbitSpeed={0.006} modelUrl={p6} modelScale={0.6 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/education' label={'Education'} orbit={true} orbitPhase={2.5} orbitRadius={10 * orbitMultiplier} orbitSpeed={0.008} modelUrl={p7} modelScale={0.15 * modelScaleMultiplier} labelVisible/>
+            <Sphere to='/experience' label={'Experience'} orbit={true} orbitPhase={-.5} orbitRadius={14.2 * orbitMultiplier} orbitSpeed={0.005} modelUrl={p5} modelScale={0.6 * modelScaleMultiplier} labelVisible/>
             {/* <Sphere color="red" radius={0.5} orbit={true} orbitPhase={3} orbitRadius={14.5} orbitSpeed={0.01} modelUrl={p10} modelScale={.001} hover={false}/> */}
             <EffectComposer>
               <Bloom intensity={1.1} luminanceThreshold={0.2} luminanceSaturation={0.9} radius={0.8} />

@@ -6,7 +6,7 @@ import Projects from './pages/Projects.jsx'
 import Skills from './pages/Skills.jsx'
 import Contact from './pages/Contact.jsx'
 import Research from './pages/Research.jsx'
-import Awards from './pages/Awards.jsx'
+import Achievements from './pages/Achievements.jsx'
 import Education from './pages/Education.jsx'
 import Experience from './pages/Experience.jsx'
 
@@ -21,7 +21,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/research" element={<Research />} />
-          <Route path="/awards" element={<Awards />} />
+          <Route path="/achievements" element={<Achievements />} />
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
