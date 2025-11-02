@@ -3,7 +3,7 @@ import { Suspense } from 'react'
 import galaxy from '../assets/background/galaxy.jpg'
 import SceneBackground from '../3dComponents/SceneBackground.jsx'
 import Sphere from '../3dComponents/Sphere.jsx'
-import ResearchComp from '../components/ResearchComp.jsx'
+import ResearchComp from '../camponents/ResearchComp.jsx'
 import SpaceShip from '../3dComponents/Spaceship.jsx'
 
 import p8 from '../assets/3DModels/P8.glb?url'
