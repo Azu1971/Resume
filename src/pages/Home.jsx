@@ -22,11 +22,11 @@ import p7 from '../assets/3DModels/P7.glb?url'
 import p8 from '../assets/3DModels/P8.glb?url'
 
 import SceneBackground from '../3dComponents/SceneBackground.jsx'
-import ResponsiveCamera from '../f/ResponsiveCamera.jsx'
+import ResponsiveCamera from '../components/ResponsiveCamera.jsx'
 
 import * as THREE from 'three'
 
-import Loader from '../f/Loader.jsx'
+import Loader from '../components/Loader.jsx'
 
 const Home = () => {
   // detect mobile and update on resize
