@@ -27,7 +27,6 @@ import ResponsiveCamera from '../components/ResponsiveCamera.jsx'
 import * as THREE from 'three'
 
 import Loader from '../components/Loader.jsx'
-import Delay from '../components/Delay.jsx'
 
 const Home = () => {
   // detect mobile and update on resize
