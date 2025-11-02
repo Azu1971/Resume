@@ -6,7 +6,7 @@ import galaxy from '../assets/background/galaxy.jpg'
 import SceneBackground from '../3dComponents/SceneBackground.jsx'
 import Sphere from '../3dComponents/Sphere.jsx'
 import './Common.css'
-import ProjectsComp from '../components/ProjectsComp.js'
+import ProjectsComp from '../components/ProjectsComp.jsx'
 import './Projects.css'
 import SpaceShip from '../3dComponents/Spaceship.jsx'
 
