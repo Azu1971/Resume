@@ -7,7 +7,7 @@ import * as THREE from "three"
 import spaceShipScene from "../assets/3DModels/spaceship.glb"
 
 // 3D Model from: https://sketchfab.com/3d-models/stylized-ww1-plane-c4edeb0e410f46e8a4db320879f0a1db
-export function SpaceShip({ hoverScale = 1.15, ...props }) {
+export function SpaceShip({ hoverScale = 1.15, position=[-13, 6, 0], rotation=[0, -Math.PI / 2, -0.25], scale=0.3}) {
   const ref = useRef()
   const navigate = useNavigate()
   const { scene } = useGLTF(spaceShipScene)
@@ -16,9 +16,9 @@ export function SpaceShip({ hoverScale = 1.15, ...props }) {
 
   // support numeric or [x,y,z] scale from props as base
   const baseScale = useMemo(() => {
-    const s = props.scale ?? 1
+    const s = scale ?? 1
     return Array.isArray(s) ? new THREE.Vector3(...s) : new THREE.Vector3(s, s, s)
-  }, [props.scale])
+  }, [scale])
 
   useFrame((_, delta) => {
     if (!ref.current) return
@@ -39,7 +39,9 @@ export function SpaceShip({ hoverScale = 1.15, ...props }) {
   return (
     <group
       ref={ref}
-      {...props}
+      position={position}
+      rotation={rotation}
+      scale={scale}
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
       onClick={handleClick}

@@ -45,6 +45,7 @@ export default function StarWarsCrawl({
         anchorX="center"
         anchorY="middle"
         material-toneMapped={false}
+        fontWeight='bold'
       >
         {text}
       </Text>

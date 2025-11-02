@@ -36,6 +36,8 @@ import SpaceShip from '../3dComponents/Spaceship.jsx'
 
 import moon from '../assets/3DModels/Moon.glb?url'
 
+import Loader from '../components/Loader.jsx'
+
 const CENTER = [0, -40, 0]
 
 // clustered skills
@@ -93,7 +95,7 @@ const Skills = () => {
   return (
     <div className="fullpage">
       <Canvas camera={{ near: 0.1, far: 2000, fov: 75, position: [0, 0, 10] }}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader />}>
           <SceneBackground src={galaxy} />
           <directionalLight intensity={2} position={[5, 1, 2]} />
           <ambientLight intensity={0.5} />
@@ -142,7 +144,7 @@ const Skills = () => {
             )
           })}
 
-          <SpaceShip position={[-13, 6, 0]} rotation={[0, -Math.PI / 2, -0.25]} scale={0.3} />
+          <SpaceShip/>
         </Suspense>
       </Canvas>
     </div>

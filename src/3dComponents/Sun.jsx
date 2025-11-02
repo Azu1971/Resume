@@ -20,11 +20,14 @@ export function Sun({
   lightIntensity = 20,   // increase to light planets more
   lightDistance = 0,     // 0 => no attenuation limit
   lightDecay = 1,
-  castShadow = false
+  castShadow = false,
+  phoneScale
 }) {
   const ref = useRef()
   const { scene } = useGLTF(url)
   const [hovered, setHovered] = useState()
+
+  scale = scale * phoneScale
 
   const label = "Resume"
 

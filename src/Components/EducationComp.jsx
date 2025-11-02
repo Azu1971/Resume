@@ -5,12 +5,15 @@ import './EducationComp.css'
 const bracImg = new URL('../assets/education/BRAC.jpg', import.meta.url).href
 const akImg = new URL('../assets/education/AKA.jpg', import.meta.url).href
 
+
 export default function EducationComp() {
   return (
     <section className="education-list">
       <article className="edu-item">
         <div className="edu-image">
-          <img src={bracImg} alt="BRAC University" />
+          <a href="https://www.bracu.ac.bd/" target='_blank'>
+            <img src={bracImg} alt="BRAC University" />
+          </a>
         </div>
         <div className="edu-body">
           <h3 className="edu-title">
@@ -41,7 +44,9 @@ export default function EducationComp() {
             A Levels: GPA: 4.25/5.0</p>
         </div>
         <div className="edu-image">
+          <a href="https://www.agakhanacademies.org/dhaka" target='_blank'>
           <img src={akImg} alt="The Aga Khan School, Dhaka" />
+          </a>
         </div>
       </article>
     </section>

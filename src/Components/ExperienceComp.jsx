@@ -4,6 +4,7 @@ import './ExperienceComp.css'
 
 import bracLogo from '../assets/experience/bracu.png'
 import iubLogo from '../assets/experience/iub.png'
+import rtLogo from '../assets/experience/rt.png'
 // replace these with your actual logos or move files to public and use '/companies/...'
 const binaryLogo = new URL('../assets/companies/binary.png', import.meta.url).href
 
@@ -71,7 +72,7 @@ const experiences = [
     period: 'Oct 2018 — Apr 2019',
     org: 'Raphael Teaches',
     location: 'Remote',
-    logo: binaryLogo,
+    logo: rtLogo,
     bullets: [
       'Developed an educational mobile application for O/A Level students with features such as MCQ interface, study materials, and videos.',
       'Built the front-end using Java and XML for a responsive user experience.',
